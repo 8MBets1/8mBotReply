@@ -5,7 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url(https://cliply.co/wp-content/uploads/2019/02/371901270_KISSCHAT_400.gif);
+    background: #2f2f2f;
+/*     background: url(https://cliply.co/wp-content/uploads/2019/02/371901270_KISSCHAT_400.gif); */
 }
 
 .chat-container {
