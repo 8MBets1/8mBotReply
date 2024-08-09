@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url(https://cliply.co/wp-content/uploads/2019/02/371901270_KISSCHAT_400.gif);
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.chat-window {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-box {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.chat-message {
+    margin: 10px 0;
+}
+
+.chat-message.bot {
+    text-align: left;
+    margin-right: 120px;
+}
+
+.chat-message.user {
+    text-align: right;
+    margin-left: 120px;
+}
+
+.chat-message p {
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.chat-message.bot p {
+    background-color: #abffa6;
+    color: #000000;
+}
+
+.chat-message.user p {
+    background-color: #003977;
+    color: #fff;
+}
+.topBox {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-weight: 900;
+}
+.user-input {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#dynamicSelect option{
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Typing effect */
+
+/* Typing effect container */
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 14px; /* Adjust if needed */
+}
+
+/* Dots animation */
+.typing-indicator .dot {
+    background-color: #999;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    animation: typing 1.4s infinite both;
+}
+
+.typing-indicator .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-indicator .dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Keyframes for the typing effect */
+@keyframes typing {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* js multi question 
+
+
+        '3': {
+            question: 'নিচে থেকে সিলেক্ট করুন আপনার কোন সমস্যাটি হচ্ছে 👇',
+            options: {
+                '1': 'আমি অনেক্ষণ আগে উত্তোলন করেছি এখনো টাকা আসেনি।',
+                '2': 'উত্তোলন কিভাবে করতে হয় আমি জানি না , আমাকে একটা ভিডিও দিন উত্তোলনের।',
+                '3': 'উত্তোলন দিয়েছি কিন্তু বাতিল হয়ে যাচ্ছে কেন?'
+            },
+            followUps: {
+                '1': {
+                    question: 'For Bank A, please select an option:',
+                    options: {
+                        '1': 'Add a savings account',
+                        '2': 'Add a checking account'
+                    },
+                    answers: {
+                        '1': 'To add a savings account with Bank A, go to "Account Settings" and select "Add Savings Account". Follow the on-screen instructions.',
+                        '2': 'To add a checking account with Bank A, visit "Bank Accounts" and click "Add Checking Account". Enter the required details.'
+                    }
+                },
+                '2': {
+                    question: 'For Bank B, please select an option:',
+                    options: {
+                        '1': 'Add a business account',
+                        '2': 'Add a personal account'
+                    },
+                    answers: {
+                        '1': 'To add a business account with Bank B, navigate to "Business Accounts" and select "Add Business Account". Provide the necessary information.',
+                        '2': 'To add a personal account with Bank B, go to "Personal Accounts" and click "Add Personal Account". Follow the prompts.'
+                    }
+                },
+                '3': {
+                    question: 'For Bank C, please select an option:',
+                    options: {
+                        '1': 'Add a joint account',
+                        '2': 'Add a retirement account'
+                    },
+                    answers: {
+                        '1': 'To add a joint account with Bank C, go to "Account Types" and choose "Add Joint Account". Enter details for both account holders.',
+                        '2': 'To add a retirement account with Bank C, visit "Retirement Accounts" and select "Add Retirement Account". Follow the instructions.'
+                    }
+                }
+            }
+        },
+
+
+
+
+
+
+
+
+
+
+
+            6: {
+      question: "To check the current weather, please select your country:",
+      options: {
+        1: "United States",
+        2: "Canada",
+        3: "United Kingdom",
+        4: "Australia",
+        5: "India",
+      },
+      answers: {
+        1: "To get the current weather in the United States, please visit your preferred weather service or app.",
+        2: "To get the current weather in Canada, please visit your preferred weather service or app.",
+        3: "To get the current weather in the United Kingdom, please visit your preferred weather service or app.",
+        4: "To get the current weather in Australia, please visit your preferred weather service or app.",
+        5: "To get the current weather in India, please visit your preferred weather service or app.",
+      },
+    },
+        
+        */

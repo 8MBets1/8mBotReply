@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot Interface</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-window">
+            <div class="topBox">8MBets Bot chat</div>
+            <div class="chat-box" id="chatBox">
+                <div class="chat-message bot">
+                    <p>স্বাগতম 8MBets এ , কিভাবে আপনাকে সহায়তা করতে পারি নিচে থেকে সিলেক্ট করুন স্যার।</p>
+                </div>
+            </div>
+            <div class="user-input" id="userInput">
+                <label for="problemSelect">এখান থেকে প্রশ্ন করুন:</label>
+                <select id="problemSelect">
+                    <option value="" disabled selected>প্রশ্ন করুন</option>
+                    <option value="1">কিভাবে এখানে খেলব ?</option>
+                    <option value="2">নিবন্ধন বা রেজিস্টার কি করে করতে হয় এখানে</option>
+                    <option value="3">উত্তোলন নিয়ে সমস্যা হচ্ছে আমার</option>
+                    <option value="4">এফিলিয়েট এজেন্ট কিভাবে হব আমি ?</option>
+                    <option value="5">আমি বোনাস সম্পর্কে জানতে চাই</option>
+                    <option value="6">অন্য কিছু সম্পর্কে জানতে চাই আমি </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="script/js.js"></script>
+</body>
+</html>
