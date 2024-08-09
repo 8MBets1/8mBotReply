@@ -1,144 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background: #2f2f2f;
-/*     background: url(https://cliply.co/wp-content/uploads/2019/02/371901270_KISSCHAT_400.gif); */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #2f2f2f;
+  /* background: url(https://cliply.co/wp-content/uploads/2019/02/371901270_KISSCHAT_400.gif); */
 }
 
 .chat-container {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .chat-window {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .chat-box {
-    padding: 10px;
-    overflow-y: auto;
-    flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .chat-message {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .chat-message.bot {
-    text-align: left;
-    margin-right: 120px;
+  text-align: left;
+  margin-right: 120px;
 }
 
 .chat-message.user {
-    text-align: right;
-    margin-left: 120px;
+  text-align: right;
+  margin-left: 120px;
 }
 
 .chat-message p {
-    margin: 0;
-    padding: 10px;
-    border-radius: 8px;
-    display: inline-block;
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .chat-message.bot p {
-    background-color: #abffa6;
-    color: #000000;
+  background-color: #abffa6;
+  color: #000000;
 }
 
 .chat-message.user p {
-    background-color: #003977;
-    color: #fff;
+  background-color: #003977;
+  color: #fff;
 }
 .topBox {
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    background-color: #f9f9f9;
-    text-align: center;
-    font-weight: 900;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-weight: 900;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.user-input {
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    background-color: #f9f9f9;
+.topBox a {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
 }
 
+/* Rotation animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add rotation class */
+.rotate {
+  animation: rotate 0.5s linear;
+}
+
+.user-input {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+.user-input img {
+  width: 15px;
+}
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 select {
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-#dynamicSelect option{
-    padding: 15px;
-    margin: 10px;
+#dynamicSelect option {
+  padding: 15px;
+  margin: 10px;
 }
 
 /* Typing effect */
 
 /* Typing effect container */
 .typing-indicator {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-    font-size: 14px; /* Adjust if needed */
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px; /* Adjust if needed */
 }
 
 /* Dots animation */
 .typing-indicator .dot {
-    background-color: #999;
-    border-radius: 50%;
-    height: 8px;
-    width: 8px;
-    margin: 0 2px;
-    animation: typing 1.4s infinite both;
+  background-color: #999;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  animation: typing 1.4s infinite both;
 }
 
 .typing-indicator .dot:nth-child(2) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .typing-indicator .dot:nth-child(3) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 /* Keyframes for the typing effect */
 @keyframes typing {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
-
-
-
-
-
-
-
-
 
 /* js multi question 
 
